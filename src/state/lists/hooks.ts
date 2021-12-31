@@ -1,5 +1,5 @@
-import { ChainId, Token } from '@uniswap/sdk'
-import { Tags, TokenInfo, TokenList } from '@uniswap/token-lists'
+import { ChainId, Token } from '@marx-dex/marx-dex-v2-sdk'
+import { Tags, TokenInfo, TokenList } from '@marx-dex/marx-dex-token-lists'
 import { useMemo } from 'react'
 import { useSelector } from 'react-redux'
 import { AppState } from '../index'
@@ -35,7 +35,8 @@ const EMPTY_LIST: TokenAddressMap = {
   [ChainId.RINKEBY]: {},
   [ChainId.ROPSTEN]: {},
   [ChainId.GÖRLI]: {},
-  [ChainId.MAINNET]: {}
+  [ChainId.MAINNET]: {},
+  [ChainId.EVMOS]: {}
 }
 
 const listCache: WeakMap<TokenList, TokenAddressMap> | null =

@@ -1,6 +1,6 @@
 import { Contract } from '@ethersproject/contracts'
-import { ChainId, WETH } from '@uniswap/sdk'
-import { abi as IUniswapV2PairABI } from '@uniswap/v2-core/build/IUniswapV2Pair.json'
+import { ChainId, WETH } from '@marx-dex/marx-dex-v2-sdk'
+import { abi as IMarXDEXV2PairABI } from '@marx-dex/marx-dex-v2-core/build/IMarXDEXV2Pair.json'
 import { useMemo } from 'react'
 import ENS_ABI from '../constants/abis/ens-registrar.json'
 import ENS_PUBLIC_RESOLVER_ABI from '../constants/abis/ens-public-resolver.json'
@@ -57,6 +57,7 @@ export function useENSRegistrarContract(withSignerIfPossible?: boolean): Contrac
   if (chainId) {
     switch (chainId) {
       case ChainId.MAINNET:
+      case ChainId.EVMOS:
       case ChainId.GÖRLI:
       case ChainId.ROPSTEN:
       case ChainId.RINKEBY:
@@ -76,7 +77,7 @@ export function useBytes32TokenContract(tokenAddress?: string, withSignerIfPossi
 }
 
 export function usePairContract(pairAddress?: string, withSignerIfPossible?: boolean): Contract | null {
-  return useContract(pairAddress, IUniswapV2PairABI, withSignerIfPossible)
+  return useContract(pairAddress, IMarXDEXV2PairABI, withSignerIfPossible)
 }
 
 export function useMulticallContract(): Contract | null {

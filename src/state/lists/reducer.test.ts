@@ -3,7 +3,7 @@ import { DEFAULT_LIST_OF_LISTS, DEFAULT_TOKEN_LIST_URL } from '../../constants/l
 import { updateVersion } from '../global/actions'
 import { fetchTokenList, acceptListUpdate, addList, removeList, selectList } from './actions'
 import reducer, { ListsState } from './reducer'
-import UNISWAP_DEFAULT_TOKEN_LIST from '@uniswap/default-token-list'
+import MARX_DEX_DEFAULT_TOKEN_LIST from '@marx-dex/marx-dex-default-token-list'
 
 const STUB_TOKEN_LIST = {
   name: '',
@@ -415,13 +415,13 @@ describe('list reducer', () => {
       beforeEach(() => {
         store = createStore(reducer, {
           byUrl: {
-            'https://unpkg.com/@uniswap/default-token-list@latest/uniswap-default.tokenlist.json': {
+            'https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest/marx-dex-default.tokenlist.json': {
               error: null,
               current: STUB_TOKEN_LIST,
               loadingRequestId: null,
               pendingUpdate: null
             },
-            'https://unpkg.com/@uniswap/default-token-list@latest': {
+            'https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest': {
               error: null,
               current: STUB_TOKEN_LIST,
               loadingRequestId: null,
@@ -435,9 +435,9 @@ describe('list reducer', () => {
 
       it('clears the current lists', () => {
         expect(
-          store.getState().byUrl['https://unpkg.com/@uniswap/default-token-list@latest/uniswap-default.tokenlist.json']
+          store.getState().byUrl['https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest/marx-dex-default.tokenlist.json']
         ).toBeUndefined()
-        expect(store.getState().byUrl['https://unpkg.com/@uniswap/default-token-list@latest']).toBeUndefined()
+        expect(store.getState().byUrl['https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest']).toBeUndefined()
       })
 
       it('puts in all the new lists', () => {
@@ -449,7 +449,7 @@ describe('list reducer', () => {
           if (url === DEFAULT_TOKEN_LIST_URL) {
             expect(s.byUrl[url]).toEqual({
               error: null,
-              current: UNISWAP_DEFAULT_TOKEN_LIST,
+              current: MARX_DEX_DEFAULT_TOKEN_LIST,
               loadingRequestId: null,
               pendingUpdate: null
             })
@@ -471,13 +471,13 @@ describe('list reducer', () => {
       beforeEach(() => {
         store = createStore(reducer, {
           byUrl: {
-            'https://unpkg.com/@uniswap/default-token-list@latest/uniswap-default.tokenlist.json': {
+            'https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest/marx-dex-default.tokenlist.json': {
               error: null,
               current: STUB_TOKEN_LIST,
               loadingRequestId: null,
               pendingUpdate: null
             },
-            'https://unpkg.com/@uniswap/default-token-list@latest': {
+            'https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest': {
               error: null,
               current: STUB_TOKEN_LIST,
               loadingRequestId: null,
@@ -485,14 +485,14 @@ describe('list reducer', () => {
             }
           },
           selectedListUrl: undefined,
-          lastInitializedDefaultListOfLists: ['https://unpkg.com/@uniswap/default-token-list@latest']
+          lastInitializedDefaultListOfLists: ['https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest']
         })
         store.dispatch(updateVersion())
       })
 
       it('does not remove lists not in last initialized list of lists', () => {
         expect(
-          store.getState().byUrl['https://unpkg.com/@uniswap/default-token-list@latest/uniswap-default.tokenlist.json']
+          store.getState().byUrl['https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest/marx-dex-default.tokenlist.json']
         ).toEqual({
           error: null,
           current: STUB_TOKEN_LIST,
@@ -501,7 +501,7 @@ describe('list reducer', () => {
         })
       })
       it('removes lists in the last initialized list of lists', () => {
-        expect(store.getState().byUrl['https://unpkg.com/@uniswap/default-token-list@latest']).toBeUndefined()
+        expect(store.getState().byUrl['https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest']).toBeUndefined()
       })
 
       it('adds all the lists in the default list of lists', () => {
@@ -510,10 +510,10 @@ describe('list reducer', () => {
 
       it('each of those initialized lists is empty', () => {
         const byUrl = store.getState().byUrl
-        // note we don't expect the uniswap default list to be prepopulated
+        // note we don't expect the marx-dex default list to be prepopulated
         // this is ok.
         Object.keys(byUrl).forEach(url => {
-          if (url !== 'https://unpkg.com/@uniswap/default-token-list@latest/uniswap-default.tokenlist.json') {
+          if (url !== 'https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest/marx-dex-default.tokenlist.json') {
             expect(byUrl[url]).toEqual({
               error: null,
               current: null,
