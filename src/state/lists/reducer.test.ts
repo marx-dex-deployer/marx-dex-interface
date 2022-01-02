@@ -415,7 +415,7 @@ describe('list reducer', () => {
       beforeEach(() => {
         store = createStore(reducer, {
           byUrl: {
-            'https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest/marx-dex-default.tokenlist.json': {
+            'https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest/build/marx-dex-default.tokenlist.json': {
               error: null,
               current: STUB_TOKEN_LIST,
               loadingRequestId: null,
@@ -435,7 +435,7 @@ describe('list reducer', () => {
 
       it('clears the current lists', () => {
         expect(
-          store.getState().byUrl['https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest/marx-dex-default.tokenlist.json']
+          store.getState().byUrl['https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest/build/marx-dex-default.tokenlist.json']
         ).toBeUndefined()
         expect(store.getState().byUrl['https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest']).toBeUndefined()
       })
@@ -471,7 +471,7 @@ describe('list reducer', () => {
       beforeEach(() => {
         store = createStore(reducer, {
           byUrl: {
-            'https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest/marx-dex-default.tokenlist.json': {
+            'https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest/build/marx-dex-default.tokenlist.json': {
               error: null,
               current: STUB_TOKEN_LIST,
               loadingRequestId: null,
@@ -492,7 +492,7 @@ describe('list reducer', () => {
 
       it('does not remove lists not in last initialized list of lists', () => {
         expect(
-          store.getState().byUrl['https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest/marx-dex-default.tokenlist.json']
+          store.getState().byUrl['https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest/build/marx-dex-default.tokenlist.json']
         ).toEqual({
           error: null,
           current: STUB_TOKEN_LIST,
@@ -513,7 +513,7 @@ describe('list reducer', () => {
         // note we don't expect the marx-dex default list to be prepopulated
         // this is ok.
         Object.keys(byUrl).forEach(url => {
-          if (url !== 'https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest/marx-dex-default.tokenlist.json') {
+          if (url !== 'https://unpkg.com/@marx-dex/marx-dex-default-token-list@latest/build/marx-dex-default.tokenlist.json') {
             expect(byUrl[url]).toEqual({
               error: null,
               current: null,
