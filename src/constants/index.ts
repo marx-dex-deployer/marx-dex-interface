@@ -3,7 +3,7 @@ import { AbstractConnector } from '@web3-react/abstract-connector'
 
 import { fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'
 
-export const ROUTER_ADDRESS = '0xD9F6184769a5dE688A6E6A1573C18beCce0ae1b5'
+export const ROUTER_ADDRESS = '0x946EeA3cCc0d0AB3A09a6bcD7cD0Bf21A39508A3'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -19,7 +19,7 @@ export const AMPL = new Token(ChainId.MAINNET, '0xD46bA6D942050d489DBd938a2C909A
 
 export const DAI_EVMOS = new Token(ChainId.EVMOS, '0x60154b6844ED3B8CbD4636244bdE43Bb06a0e68D', 18, 'DAI', 'Dai Stablecoin')
 export const USDC_EVMOS = new Token(ChainId.EVMOS, '0xdcB434b0C8c8c7C6b6b61990B2A87C2c3B1B1F83', 6, 'USDC', 'USD Coin')
-export const MARX_EVMOS = new Token(ChainId.EVMOS, '0xbEeed8A8Ac97c4C3F698d0f41baC8D5ccF49cC43', 18, 'USDT', 'MarX Token')
+export const MARX_EVMOS = new Token(ChainId.EVMOS, '0x0Cc6b6EeEa2B77d4122788e0cE5f0cf9366B1F7D', 18, 'USDT', 'MarX Token')
 
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],

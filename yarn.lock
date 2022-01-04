@@ -1881,10 +1881,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@marx-dex/marx-dex-default-token-list@^1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@marx-dex/marx-dex-default-token-list/-/marx-dex-default-token-list-1.3.2.tgz#6d560c706a385ba52ae2c952d87e7beb521ae3dc"
-  integrity sha512-sf409GmPxPaHnrs9WL4FsUNzlhKDQAryW4627FQFiuWpcfCrSN4CpOzg+uz8/RO/DdEauy9SZkqRfgr2ragv8A==
+"@marx-dex/marx-dex-default-token-list@^1.3.3":
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@marx-dex/marx-dex-default-token-list/-/marx-dex-default-token-list-1.3.3.tgz#bef9f753fda2b145f60a6fa476e734383f1e60b5"
+  integrity sha512-MXObYpkFgoTNOtHetZ+hazXgUtlr1emC5jKyA8qwy6Xk/rOPF5clGBFI7zZd/pMSG+21j3GWc+O+MBBUjOPQbQ==
 
 "@marx-dex/marx-dex-lib@4.0.1-alpha":
   version "4.0.1-alpha"
@@ -1911,10 +1911,10 @@
     "@marx-dex/marx-dex-lib" "4.0.1-alpha"
     "@marx-dex/marx-dex-v2-core" "1.0.1"
 
-"@marx-dex/marx-dex-v2-sdk@3.0.3":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@marx-dex/marx-dex-v2-sdk/-/marx-dex-v2-sdk-3.0.3.tgz#fd512fdd066f09fe95570dd441c683503a756e90"
-  integrity sha512-Ilt630DUVV2vrhO1H67DhCtYJnS/cQHOpNWTa745IbGJ7teTBZFsFsPDID9FQDW/ch4a5hnFoBZ5moo6l0shZQ==
+"@marx-dex/marx-dex-v2-sdk@3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@marx-dex/marx-dex-v2-sdk/-/marx-dex-v2-sdk-3.0.4.tgz#29af0ba1a14ae68ee9e1c22b8ce2a90dde68314f"
+  integrity sha512-4sEThb7Pk589fYtWJKOpcVCqvDprcGm32qfCVzSVzfYqjcChUpwz3Wogz5r1QWm9XtpgWw13E/91DslfQaQxKA==
   dependencies:
     "@marx-dex/marx-dex-v2-core" "^1.0.0"
     big.js "^5.2.2"
