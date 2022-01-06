@@ -1911,10 +1911,10 @@
     "@marx-dex/marx-dex-lib" "4.0.1-alpha"
     "@marx-dex/marx-dex-v2-core" "1.0.1"
 
-"@marx-dex/marx-dex-v2-sdk@3.0.4":
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/@marx-dex/marx-dex-v2-sdk/-/marx-dex-v2-sdk-3.0.4.tgz#29af0ba1a14ae68ee9e1c22b8ce2a90dde68314f"
-  integrity sha512-4sEThb7Pk589fYtWJKOpcVCqvDprcGm32qfCVzSVzfYqjcChUpwz3Wogz5r1QWm9XtpgWw13E/91DslfQaQxKA==
+"@marx-dex/marx-dex-v2-sdk@3.0.5":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@marx-dex/marx-dex-v2-sdk/-/marx-dex-v2-sdk-3.0.5.tgz#99decb6721f4999d5c33698d4a4abc68599433d7"
+  integrity sha512-3zuS+9hHVI++obqLTvWCHaBt6IIqT/g7W218LoM2rgCgiqTQQyxLVBhe+MYVJFM4UG8MqbM1nKxm0QSfcWPZNg==
   dependencies:
     "@marx-dex/marx-dex-v2-core" "^1.0.0"
     big.js "^5.2.2"

@@ -3,7 +3,7 @@
 [![Tests](https://github.com/marx-dex-deployer/marx-dex-interface/workflows/Tests/badge.svg)](https://github.com/marx-dex-deployer/marx-dex-interface/actions?query=workflow%3ATests)
 [![Styled With Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io/)
 
-An open source interface for MarX Decentralized Exchange -- a protocol for decentralized exchange of Ethereum tokens.
+An open source interface for MarX Decentralized Exchange -- a protocol for decentralized exchange of Evmos tokens.
 
 - Website: [gameland.cc](https://gameland.cc/)
 - Interface: [gameland.cc](https://gameland.cc)

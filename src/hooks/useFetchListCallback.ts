@@ -1,5 +1,4 @@
 import { nanoid } from '@reduxjs/toolkit'
-import { ChainId } from '@marx-dex/marx-dex-v2-sdk'
 import { TokenList } from '@marx-dex/marx-dex-token-lists'
 import { useCallback } from 'react'
 import { useDispatch } from 'react-redux'
@@ -16,8 +15,8 @@ export function useFetchListCallback(): (listUrl: string) => Promise<TokenList> 
 
   const ensResolver = useCallback(
     (ensName: string) => {
-      if (!library || chainId !== ChainId.MAINNET) {
-        if (NETWORK_CHAIN_ID === ChainId.MAINNET) {
+      if (!library || chainId !== 1) {
+        if (NETWORK_CHAIN_ID === 1) {
           const networkLibrary = getNetworkLibrary()
           if (networkLibrary) {
             return resolveENSContentHash(ensName, networkLibrary)
