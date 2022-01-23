@@ -1881,42 +1881,42 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@marx-dex/marx-dex-default-token-list@^1.3.3":
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/@marx-dex/marx-dex-default-token-list/-/marx-dex-default-token-list-1.3.3.tgz#bef9f753fda2b145f60a6fa476e734383f1e60b5"
-  integrity sha512-MXObYpkFgoTNOtHetZ+hazXgUtlr1emC5jKyA8qwy6Xk/rOPF5clGBFI7zZd/pMSG+21j3GWc+O+MBBUjOPQbQ==
+"@marx-dex/marx-dex-default-token-list@^1.3.4":
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/@marx-dex/marx-dex-default-token-list/-/marx-dex-default-token-list-1.3.4.tgz#2b9c5eb7939000512f186f1326bddbc0b233af72"
+  integrity sha512-a7NKzFpqqArSKWpH9Fu/kEVsGAfYtwNtK3othZ4DMTJml9xxqC9fmRCv+RwUe4TB1vF+FeaEUdnbDZW8Gtyj0w==
 
 "@marx-dex/marx-dex-lib@4.0.1-alpha":
   version "4.0.1-alpha"
   resolved "https://registry.yarnpkg.com/@marx-dex/marx-dex-lib/-/marx-dex-lib-4.0.1-alpha.tgz#999e2cbe9be6e221e39271ca076410715139b75a"
   integrity sha512-SBizeOKBQen9LSODJdF3pQkEixKM+t7S03jOkKFmRzr6tcEGlE74+uYMD+daOFD00oJnd4UqRdv3niQBl0NrCQ==
 
-"@marx-dex/marx-dex-token-lists@^1.0.0-beta.16":
-  version "1.0.0-beta.16"
-  resolved "https://registry.yarnpkg.com/@marx-dex/marx-dex-token-lists/-/marx-dex-token-lists-1.0.0-beta.16.tgz#1c83e3d6e992b049db10f98b9f3c5c33ad15e108"
-  integrity sha512-rzzgllNDuVv342jI6NkQvMk8oaqtRaWRGvexrWCRBKBp86ow7ImkzmU7sa/PXCAh9E1KOMJOzW5rKWG6hVR3Aw==
-
-"@marx-dex/marx-dex-v2-core@1.0.1", "@marx-dex/marx-dex-v2-core@^1.0.0":
+"@marx-dex/marx-dex-token-lists@^1.0.1":
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@marx-dex/marx-dex-v2-core/-/marx-dex-v2-core-1.0.1.tgz#3b2c024a5c5780a66a02944fbd1f4ced736b0fef"
-  integrity sha512-L95ZJwp0QuGDfvDSS6Saxx/XS5wgfbfVDyrvVdUveYzbv7WwmKbCX8f+lju4GGh8mA6PldP7h3q5/l/x+hxv5A==
+  resolved "https://registry.yarnpkg.com/@marx-dex/marx-dex-token-lists/-/marx-dex-token-lists-1.0.1.tgz#b32258645f1b357835886a62201509d3d9b72f6b"
+  integrity sha512-p2QtZXYPoJ7BsQcoVpU1UIpPg/X82BdUotmPV55u50oTH8AuLpBAw2z5cmQNe7DAQ5+EqBlSZUZ/6PYWhViMhw==
+
+"@marx-dex/marx-dex-v2-core@1.0.2", "@marx-dex/marx-dex-v2-core@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@marx-dex/marx-dex-v2-core/-/marx-dex-v2-core-1.0.2.tgz#2dc0b533f3313fdc7a98b69fa131b514d4d963b6"
+  integrity sha512-YNVtzPtVPWj1kHEh7Fapwc5xIhQQOXuBQs4xUTnfsftah6HsSXtBKkQ3jlNGERYag4miGA5Ici2hQ3QPSS1kDg==
   dependencies:
     "@truffle/hdwallet-provider" "^2.0.0"
 
-"@marx-dex/marx-dex-v2-periphery@^1.1.0-beta.0":
-  version "1.1.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@marx-dex/marx-dex-v2-periphery/-/marx-dex-v2-periphery-1.1.0-beta.0.tgz#b42b9a72a87b54e261b39bcd608b712d0e8166a3"
-  integrity sha512-Cfpc3OO89oOqfZ2R/TCtJclRvcF9mHLDAGRHarbeczUJtH5FI/ytwDcof74Im8euwzVwY/dsfldqtjjl+0kHaA==
+"@marx-dex/marx-dex-v2-periphery@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@marx-dex/marx-dex-v2-periphery/-/marx-dex-v2-periphery-1.1.1.tgz#da28740db0a89bf9b9c412e3e71f08a46cd068d2"
+  integrity sha512-FD01+aU+vob8EsIED4oMEeu03XOVLKKvSWs+dRrLT7GF34qGcVkN+jHX7moc65W/n6vdBXDO2drZulXNPiUgtg==
   dependencies:
     "@marx-dex/marx-dex-lib" "4.0.1-alpha"
-    "@marx-dex/marx-dex-v2-core" "1.0.1"
+    "@marx-dex/marx-dex-v2-core" "1.0.2"
 
-"@marx-dex/marx-dex-v2-sdk@3.0.5":
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/@marx-dex/marx-dex-v2-sdk/-/marx-dex-v2-sdk-3.0.5.tgz#99decb6721f4999d5c33698d4a4abc68599433d7"
-  integrity sha512-3zuS+9hHVI++obqLTvWCHaBt6IIqT/g7W218LoM2rgCgiqTQQyxLVBhe+MYVJFM4UG8MqbM1nKxm0QSfcWPZNg==
+"@marx-dex/marx-dex-v2-sdk@3.0.6":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@marx-dex/marx-dex-v2-sdk/-/marx-dex-v2-sdk-3.0.6.tgz#efbd5deb5dec50509ef41c6ef4fc09f632ba562f"
+  integrity sha512-F97OZJ7TOpAbKJ4F6QaHLJ7nXnEZn/Xr6sB9RYloMufYUgwi6Ze8wFjVy5QV4TzrAApHT6x+jh1dst2kzcplhA==
   dependencies:
-    "@marx-dex/marx-dex-v2-core" "^1.0.0"
+    "@marx-dex/marx-dex-v2-core" "^1.0.2"
     big.js "^5.2.2"
     decimal.js-light "^2.5.0"
     jsbi "^3.1.1"

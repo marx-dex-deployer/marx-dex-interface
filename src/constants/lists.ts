@@ -1,4 +1,4 @@
-const MARX_DEX_TOKEN_LIST_URL = 'https://unpkg.com/@marx-dex/marx-dex-default-token-list@1.3.2'
+const MARX_DEX_TOKEN_LIST_URL = 'https://unpkg.com/@marx-dex/marx-dex-default-token-list@1.3.4'
 
 export const DEFAULT_TOKEN_LIST_URL = MARX_DEX_TOKEN_LIST_URL
 
