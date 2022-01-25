@@ -2,13 +2,13 @@ import { Currency, ETHER, Token } from '@marx-dex/marx-dex-v2-sdk'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'
 
-import EthereumLogo from '../../assets/images/ethereum-logo.png'
+import EthereumLogo from '../../assets/images/evmos.png'
 import useHttpLocations from '../../hooks/useHttpLocations'
 import { WrappedTokenInfo } from '../../state/lists/hooks'
 import Logo from '../Logo'
 
 const getTokenLogoURL = (address: string) =>
-  `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${address}/logo.png`
+  `https://raw.githubusercontent.com/marx-dex-deployer/marx-dex-interface/main/src/assets/images/tokens/${address}.png`
 
 const StyledEthereumLogo = styled.img<{ size: string }>`
   width: ${({ size }) => size};
