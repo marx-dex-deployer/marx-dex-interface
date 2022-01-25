@@ -1,8 +1,10 @@
 import React, { useContext, useMemo } from 'react'
 import { ThemeContext } from 'styled-components'
+import { Pair } from '@marx-dex/marx-dex-v2-sdk'
 import { Link } from 'react-router-dom'
 import { SwapPoolTabs } from '../../components/NavigationTabs'
 
+import FullPositionCard from '../../components/PositionCard'
 import Question from '../../components/QuestionHelper'
 import { useTokenBalancesWithLoadingIndicator } from '../../state/wallet/hooks'
 import { StyledInternalLink, TYPE } from '../../theme'
@@ -49,6 +51,8 @@ export default function Pool() {
   const v2IsLoading =
     fetchingV2PairBalances || v2Pairs?.length < liquidityTokensWithBalances.length || v2Pairs?.some(V2Pair => !V2Pair)
 
+  const allV2PairsWithLiquidity = v2Pairs.map(([, pair]) => pair).filter((v2Pair): v2Pair is Pair => Boolean(v2Pair))
+      
   return (
     <>
       <AppBody>
@@ -59,7 +63,7 @@ export default function Pool() {
               Add Liquidity
             </Text>
           </ButtonPrimary>
-
+          
           <AutoColumn gap="12px" style={{ width: '100%' }}>
             <RowBetween padding={'0 8px'}>
               <Text color={theme.text1} fontWeight={500}>
@@ -80,6 +84,12 @@ export default function Pool() {
                   <Dots>Loading</Dots>
                 </TYPE.body>
               </LightCard>
+            ) : allV2PairsWithLiquidity?.length > 0 ? (
+              <>
+                {allV2PairsWithLiquidity.map(v2Pair => (
+                  <FullPositionCard key={v2Pair.liquidityToken.address} pair={v2Pair} />
+                ))}
+              </>
             ) : (
               <LightCard padding="40px">
                 <TYPE.body color={theme.text3} textAlign="center">
